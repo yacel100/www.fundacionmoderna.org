@@ -106,7 +106,7 @@ p {
 /* ESTILOS HEADER */
 
 header {
-    height: 700px;
+    height: 300px;
     width: 100%;
     position: relative;
     background-color: #fff;
@@ -172,7 +172,7 @@ a.botonGetStarted:hover {
 }
 
 .imgHeader img {
-    width: 75%;
+    width: 70%;
     transform: translateX(0);
     opacity: 1;
     animation: animacion1 1s ease-out;
