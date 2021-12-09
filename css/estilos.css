@@ -250,8 +250,14 @@ a.botonGetStarted:hover {
     padding: 1.25rem;
     transition: 0.4s;
     margin-bottom: 20px;
+    
 }
-
+.packcard1{
+    background-image: url("../images/img_3.jpg");
+}
+.cardtextcolor{
+    color: #02d2b5;
+}
 .cardFeatures span {
     box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.2);
 }
