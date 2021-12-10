@@ -145,7 +145,7 @@ header {
     font-size: 14px;
 }
 
-a.botonGetStarted {
+button.botonGetStarted {
     display: inline-block;
     width: 135px;
     text-align: center;
@@ -159,7 +159,7 @@ a.botonGetStarted {
     transition: all 0.3s ease 0s;
 }
 
-a.botonGetStarted:hover {
+button.botonGetStarted:hover {
     color: #20bf6b !important;
     background-color: transparent;
     border-radius: 6px;
