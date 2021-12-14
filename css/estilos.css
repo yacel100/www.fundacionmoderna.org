@@ -486,6 +486,54 @@ a.botonGetStarted:hover {
 }
 
 
+
+/* ESTILOS Voluntario */
+
+.boxVoluntario {
+    padding: 50px;
+    background-color: #f6f6f6;
+    height: 100vh;
+}
+
+.voluntario {
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.imgVoluntario {
+    width: 45%;
+    -webkit-box-shadow: 1px 9px 15px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 9px 15px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 9px 15px -8px rgba(0, 0, 0, 0.75);
+}
+
+.imgVoluntario img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.contenidoVoluntario {
+    width: 100%;
+    padding-left: 12%;
+}
+
+.contenidoVoluntario h3 {
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.contenidoVoluntario p {
+    margin-bottom: 10px;
+    width: 80%;
+    color: #9c9c9c;
+}
+
+
 /* ESTILOS SLIDER */
 
 .boxSlider {
