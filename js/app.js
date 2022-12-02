@@ -32,17 +32,7 @@ window.addEventListener("scroll", event => {
 
     mainNavLinks.forEach(link => {
         let section = document.querySelector(link.hash);
-        console.log(section);
-        if (section.offsetTop != null) {
-            if (
-                section.offsetTop <= fromTop &&
-                section.offsetTop + section.offsetHeight > fromTop
-            ) {
-                link.classList.add("current");
-            } else {
-                link.classList.remove("current");
-            }
-        }
+
     });
 });
 
