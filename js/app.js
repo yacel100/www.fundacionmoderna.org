@@ -32,7 +32,7 @@ window.addEventListener("scroll", event => {
 
     mainNavLinks.forEach(link => {
         let section = document.querySelector(link.hash);
-        if (section.length) {
+        if (!isNaN(section)) {
             if (
                 section.offsetTop <= fromTop &&
                 section.offsetTop + section.offsetHeight > fromTop
