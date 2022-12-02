@@ -1,5 +1,5 @@
 // AGREGA CLASE boxCardAnimated AL HACER SCROLL PARA ANIMAR COMPONENTE CARD 
-window.onscroll = function() {
+window.onscroll = function () {
 
     let scrollPosY = window.pageYOffset | document.body.scrollTop;
 
@@ -32,22 +32,26 @@ window.addEventListener("scroll", event => {
 
     mainNavLinks.forEach(link => {
         let section = document.querySelector(link.hash);
-        if (
-            section.offsetTop <= fromTop &&
-            section.offsetTop + section.offsetHeight > fromTop
-        ) {
-            link.classList.add("current");
-        } else {
-            link.classList.remove("current");
+        if (section.length) {
+            if (
+                section.offsetTop <= fromTop &&
+                section.offsetTop + section.offsetHeight > fromTop
+            ) {
+                link.classList.add("current");
+            } else {
+                link.classList.remove("current");
+            }
         }
     });
 });
 
 
 // DESPLAZAMIENTO SMOOTH SCROLL
-window.onload = function() {
+window.onload = function () {
 
-    const easeInCubic = function(t) { return t * t * t }
+    const easeInCubic = function (t) {
+        return t * t * t
+    }
     const scrollElems = document.getElementsByClassName('scroll');
 
     const scrollToElem = (start, stamp, duration, scrollEndElemTop, startScrollOffset) => {
@@ -72,7 +76,7 @@ window.onload = function() {
     for (let i = 0; i < scrollElems.length; i++) {
         const elem = scrollElems[i];
 
-        elem.addEventListener('click', function(e) {
+        elem.addEventListener('click', function (e) {
             e.preventDefault();
             const scrollElemId = e.target.href.split('#')[1];
             const scrollEndElem = document.getElementById(scrollElemId);
